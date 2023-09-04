@@ -27,8 +27,8 @@ a {
   grid-template-areas:
     'community community'
     'subscription why-us';
-  width: 800px;
-  height: 600px;
+  width: 634px;
+  height: 475px;
   background: #eee;
   -webkit-box-shadow: 2px 53px 148px -78px rgba(184, 228, 239, 1);
   -moz-box-shadow: 2px 53px 148px -78px rgba(184, 228, 239, 1);
@@ -37,7 +37,7 @@ a {
 
 .container > .card {
   text-align: start;
-  padding: 45px 45px 0 45px;
+  padding: 35px;
 }
 
 .card.community {
@@ -46,20 +46,18 @@ a {
   border-radius: 10px 10px 0px 0px;
 }
 
-.card.community h1 {
+.card.community h2 {
   margin-top: 10px;
   color: #2ab2af;
 }
-.card.card.community h3 {
-  letter-spacing: 1px;
+.card.card.community h4 {
   margin: 30px 0 15px 0;
   color: #c0df34;
 }
 .card.community p {
   width: 100%;
-  font-size: 21px;
   color: #babec4;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -79,13 +77,11 @@ a {
 } */
 
 .card.subscription p.details {
-  font-size: 21px;
   font-weight: normal;
-  margin-top: 0;
 }
 
 .card.subscription span {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   margin-right: 15px;
   color: #fff;
@@ -101,17 +97,16 @@ a {
 }
 
 .card.subscription .btn {
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   padding: 15px;
   background-color: #c0df34;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 14px 51px -27px rgba(17, 17, 17, 1);
-  -moz-box-shadow: 1px 14px 51px -27px rgba(17, 17, 17, 1);
-  box-shadow: 1px 14px 51px -27px rgba(17, 17, 17, 1);
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 10px 29px 0px rgba(52, 155, 125, 1);
+  -moz-box-shadow: -1px 10px 29px 0px rgba(52, 155, 125, 1);
+  box-shadow: -1px 10px 29px 0px rgba(52, 155, 125, 1);
   transition: all 0.2s;
 }
 
@@ -141,7 +136,6 @@ a {
 }
 
 @media (max-width: 800px) {
-
   .container {
     grid-template-areas:
       'community'
@@ -154,13 +148,13 @@ a {
     text-align: start;
     padding: 30px;
   }
-  .card.community p{
+  /* .card.community p {
     font-size: 17px;
-  }
+  } */
   .card.subscription {
     border-radius: 0;
   }
   .card.card.why-us {
-    border-radius: 0px 0px 10px 10px ;
+    border-radius: 0px 0px 10px 10px;
   }
 }
